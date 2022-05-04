@@ -7,9 +7,9 @@ class Player(pygame.sprite.Sprite):
     def __init__(self,pos,surface,create_jump_particles):
         super().__init__()
         self.import_character_assets()
-        self.frame_index = 0
-        self.animation_speed = 0.15
-        self.image =  self.animations['idle'][self.frame_index]
+        self.__frame_index = 0
+        self.__animation_speed = 0.15
+        self.image =  self.animations['idle'][self.__frame_index]
  
         self.rect = self.image.get_rect(topleft = pos)
 
@@ -24,7 +24,7 @@ class Player(pygame.sprite.Sprite):
         self.direction = pygame.math.Vector2(0,0)
         self.speed = 8
         self.gravity = 0.8
-        self.jump_speed = -16
+        self.jump_speed = -18
 
         #player status
         self.status = 'idle'
@@ -49,11 +49,11 @@ class Player(pygame.sprite.Sprite):
         animation = self.animations[self.status]
 
         #loop over frame index
-        self.frame_index += self.animation_speed
-        if self.frame_index >= len(animation):
-            self.frame_index = 0
+        self.__frame_index += self.__animation_speed
+        if self.__frame_index >= len(animation):
+            self.__frame_index = 0
         
-        image = animation[int(self.frame_index)]
+        image = animation[int(self.__frame_index)]
         if self.facing_right:
             self.image = image
         else:
