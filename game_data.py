@@ -30,7 +30,7 @@ level_2 = {
 		'enemies': 'level/1/level_1_enemies.csv',
 		'constraints':'level/1/level_1_constrain.csv',
 		'player': 'level/1/level_1_player.csv',
-		'node_pos':(610,350),
+		'node_pos':(480,610),
 		'unlock': 3,
 		'node_graphics': 'overworld/2'}
 
@@ -43,7 +43,7 @@ level_3 = {
 		'enemies': 'level/1/level_1_enemies.csv',
 		'constraints':'level/1/level_1_constrain.csv',
 		'player': 'level/1/level_1_player.csv',
-		'node_pos':(880,210),
+		'node_pos':(610,350),
 		'unlock': 4,
 		'node_graphics': 'overworld/3'}
 
