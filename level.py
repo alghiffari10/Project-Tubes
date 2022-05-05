@@ -6,12 +6,20 @@ from tiles import Coin, Crate, StaticTile, Tile, Tree
 from decoration import Clouds, Sky, Water   
 from player import Player
 from particles import ParticleEffect
+from game_data import levels
 class Level:
-    def __init__(self,level_data,surface):
+    def __init__(self,current_level,surface,create_overworld):
         # general setup
         self.__display_surface = surface
         self.__world_shift = 0
         self.__current_x = None
+
+
+        #overworld connection
+        self.create_overworld = create_overworld
+        self.current_level = current_level
+        level_data = levels[self.current_level]
+        self.new_max_level = level_data['unlock']
 
         # player 
         player_layout = import_csv_layout(level_data['player'])
@@ -192,6 +200,15 @@ class Level:
         if player.on_ceiling and player.direction.y > 0:
             player.on_ceiling = False 
     
+    def check_death(self):
+        if self.player.sprite.rect.top > screen_height:
+            self.create_overworld(self.current_level,0)
+    
+    def check_win(self):
+        if pygame.sprite.spritecollide(self.player.sprite,self.goal,False):
+            self.create_overworld(self.current_level,self.new_max_level)
+            
+    
 
     def run(self):
 
@@ -230,6 +247,9 @@ class Level:
         self.player.draw(self.__display_surface)
         self.goal.update(self.__world_shift)
         self.goal.draw(self.__display_surface)
+
+        self.check_death()
+        self.check_win()
 
         #Water
         self.water.draw(self.__display_surface,self.__world_shift)
