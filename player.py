@@ -1,7 +1,6 @@
 import pygame
 from support import import_folder
 from math import sin
-
 RED = (255, 0, 0)
 
 class Player(pygame.sprite.Sprite):
@@ -11,7 +10,6 @@ class Player(pygame.sprite.Sprite):
         self.__frame_index = 0
         self.__animation_speed = 0.15
         self.image =  self.animations['idle'][self.__frame_index]
- 
         self.rect = self.image.get_rect(topleft = pos)
 
         # dust particles 
@@ -35,11 +33,16 @@ class Player(pygame.sprite.Sprite):
         self.on_left = False
         self.on_right = False
 
+
         # health management
         self.change_health = change_health
         self.invincible = False
         self.invincibility_duration = 500
         self.hurt_time = 0
+
+        #audio
+        # self.jump_sound = pygame.mixer.music.load('audio/jump.wav')
+        # self.jump_sound.set_volume(0.5)
     
     def import_character_assets(self):
         character_path = 'player/'
@@ -116,6 +119,7 @@ class Player(pygame.sprite.Sprite):
         if (keys[pygame.K_SPACE] or keys[pygame.K_UP]) and self.on_ground:
             self.jump()
             self.create_jump_particles(self.rect.midbottom)
+
     
     def get_status(self):
         if self.direction.y < 0:

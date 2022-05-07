@@ -3,6 +3,7 @@ from settings import *
 from level import Level
 from overworld import Overworld
 from ui import UI
+
 BG = (238,213,183)
 class Game:
 	def __init__(self):
@@ -42,7 +43,6 @@ class Game:
 		if self.cur_health <= 0:
 			self.cur_health = 100
 			self.coins = 0
-			self.max_level = 0
 			self.overworld = Overworld(0,self.max_level,screen,self.create_level)
 			self.status = 'overworld'
 
