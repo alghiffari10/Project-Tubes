@@ -9,11 +9,12 @@ class Game:
 	def __init__(self):
 
 		# game attributes
-		self.max_level = 0
+		self.max_level = 3
 		self.max_health = 100
 		self.cur_health = 100
 		self.coins = 0
-		#audio
+
+		# audio
 		self.level_bg_music = pygame.mixer.Sound('audio/level_music.wav')
 		self.overworld_bg_music = pygame.mixer.Sound('audio/overworld_music.wav')
 		self.overworld_bg_music.set_volume(0.3)
