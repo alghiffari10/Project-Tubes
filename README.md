@@ -26,13 +26,13 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 ## Project team
 
-- Raihan Alghiffari
+- Raihan Alghiffari (120140005)
 
 - Randika Sagala (120140075)
 
 - Sarlini (120140089)
 
-- Yustaf Kusuma Abi Al Yasid (120140178)
+- Yustaf Kusuma Abi Al Yasid / 120140178
 
 - Adli Mustofa                (120140022)
 
