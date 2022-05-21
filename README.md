@@ -15,7 +15,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Player can move with input user
 
-- Player can kill enemy
+- Players can kill enemies by stepping on them 
 
 - Enemy can hit Player
 
@@ -28,7 +28,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Raihan Alghiffari
 
-- Randika Sagala
+- Randika Sagala (120140075)
 
 - Sarlini
 
