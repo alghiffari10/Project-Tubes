@@ -36,4 +36,4 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Adli Mustofa
 
-- Rio Prasetyo
+- Rio Prasetyo (120140025)
