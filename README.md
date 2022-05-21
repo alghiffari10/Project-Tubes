@@ -23,6 +23,10 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Player can detect coin if collision
 
+- Silver coins get 1 score
+
+- Gold coins get 5 score
+
 
 ## Project team
 
@@ -32,8 +36,8 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Sarlini
 
-- Yustaf Kusuma Abi Al Yasid / 120140178
+- Yustaf Kusuma Abi Al Yasid (120140178)
 
-- Adli Mustofa                (120140022)
+- Adli Mustofa (120140022)
 
 - Rio Prasetyo
