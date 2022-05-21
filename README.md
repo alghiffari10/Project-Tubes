@@ -32,7 +32,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Sarlini
 
-- Yustaf Kusuma Abi Al Yasid
+- Yustaf Kusuma Abi Al Yasid / 120140178
 
 - Adli Mustofa                (120140022)
 
