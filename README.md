@@ -34,6 +34,6 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Yustaf Kusuma Abi Al Yasid
 
-- Adli Mustofa
+- Adli Mustofa                (120140022)
 
 - Rio Prasetyo
