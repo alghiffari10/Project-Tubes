@@ -30,7 +30,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Randika Sagala (120140075)
 
-- Sarlini
+- Sarlini (120140089)
 
 - Yustaf Kusuma Abi Al Yasid / 120140178
 
