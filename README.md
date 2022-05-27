@@ -21,7 +21,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Have 6 level
 
-- Player can detect coin if collision
+- Player dapat mendekteksi coin apabila bersentuhan
 
 
 ## Project team
