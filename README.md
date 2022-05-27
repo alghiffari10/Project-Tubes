@@ -15,7 +15,7 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Player can move with input user
 
-- Players can kill enemies by stepping on them 
+- Player can kill enemy
 
 - Enemy can hit Player
 
@@ -23,21 +23,49 @@ This is a game made like the Mario game concept, and this is the game that was c
 
 - Player can detect coin if collision
 
-- Silver coins get 1 score
-
-- Gold coins get 5 score
-
 
 ## Project team
 
-- Raihan Alghiffari (120140005)
+- Raihan Alghiffari
 
-- Randika Sagala (120140075)
+- Randika Sagala
 
-- Sarlini (120140089)
+- Sarlini
 
-- Yustaf Kusuma Abi Al Yasid (120140178)
+- Yustaf Kusuma Abi Al Yasid
 
-- Adli Mustofa (120140022)
+- Adli Mustofa
 
-- Rio Prasetyo (120140025)
+- Rio Prasetyo
+
+## Instalasi
+
+clone github menggunakan git
+
+```bash
+  git clone https://github.com/alghiffari10/Project-Tubes.git
+```
+instal pygame
+```bash
+pip instal pygame
+```
+
+## Run game on docker
+follow the instructions below:
+```bash
+make build-redhatboy
+```
+cek apakah image nya sudah ada di docker 
+```bash
+docker images
+```
+game hanya bisa di jalankan di linux 
+```bash
+ make run-linux
+```
+
+## Video Demo Kontainer
+
+[![LIHAT VIDEO DISINI](http://img.youtube.com/vi/rDG8WafzwIo/0.jpg)](https://www.youtube.com/watch?v=rDG8WafzwIo)
+
+KLIK GAMBAR UNTUK MELIHAT VIDEO
