@@ -82,7 +82,7 @@ class Level:
                     y = row_index * tile_size
                     if type == 'terrain':
                         #interaksi antar object
-                        terrain_tile_list = import_cut_graphics('Tiles/3.png')
+                        terrain_tile_list = import_cut_graphics('Tiles/2.png')
                         tile_surface = terrain_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                     if type == 'crates':
